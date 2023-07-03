@@ -1,0 +1,130 @@
+import React from "react";
+
+function NotificationDetail() {
+  return (
+    <div>
+      <div className="appHeader">
+        <div className="left">
+          <a href="#" className="headerButton goBack">
+            <ion-icon name="chevron-back-outline" />
+          </a>
+        </div>
+        <div className="pageTitle">Notification Detail</div>
+        <div className="right">
+          <a
+            href="#"
+            className="headerButton"
+            data-bs-toggle="modal"
+            data-bs-target="#DialogBasic"
+          >
+            <ion-icon name="trash-outline" />
+          </a>
+        </div>
+      </div>
+      {/* * App Header */}
+      {/* Dialog Basic */}
+      <div
+        className="modal fade dialogbox"
+        id="DialogBasic"
+        data-bs-backdrop="static"
+        tabIndex={-1}
+        role="dialog"
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Delete Notification</h5>
+            </div>
+            <div className="modal-body">Are you sure?</div>
+            <div className="modal-footer">
+              <div className="btn-inline">
+                <a
+                  href="#"
+                  className="btn btn-text-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  CANCEL
+                </a>
+                <a
+                  href="#"
+                  className="btn btn-text-primary"
+                  data-bs-dismiss="modal"
+                >
+                  DELETE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* * Dialog Basic */}
+      {/* App Capsule */}
+      <div id="appCapsule" className="full-height">
+        <div className="section">
+          <div className="listed-detail mt-3">
+            <div className="icon-wrapper">
+              <div className="iconbox">
+                <ion-icon name="arrow-down-outline" />
+              </div>
+            </div>
+            <h3 className="text-center mt-2">Payment Received</h3>
+          </div>
+          <ul className="listview simple-listview no-space mt-3">
+            <li>
+              <span>From</span>
+              <strong>John Doe</strong>
+            </li>
+            <li>
+              <span>Bank Name</span>
+              <strong>Envato Bank</strong>
+            </li>
+            <li>
+              <span>Date</span>
+              <strong>Sep 25, 2020 10:45 AM</strong>
+            </li>
+            <li>
+              <span>Amount</span>
+              <strong>$ 50</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {/* * App Capsule */}
+      {/* App Bottom Menu */}
+      <div className="appBottomMenu">
+        <a href="index.html" className="item">
+          <div className="col">
+            <ion-icon name="pie-chart-outline" />
+            <strong>Overview</strong>
+          </div>
+        </a>
+        <a href="app-pages.html" className="item">
+          <div className="col">
+            <ion-icon name="document-text-outline" />
+            <strong>Pages</strong>
+          </div>
+        </a>
+        <a href="app-components.html" className="item">
+          <div className="col">
+            <ion-icon name="apps-outline" />
+            <strong>Components</strong>
+          </div>
+        </a>
+        <a href="app-cards.html" className="item">
+          <div className="col">
+            <ion-icon name="card-outline" />
+            <strong>My Cards</strong>
+          </div>
+        </a>
+        <a href="app-settings.html" className="item">
+          <div className="col">
+            <ion-icon name="settings-outline" />
+            <strong>Settings</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default NotificationDetail;
