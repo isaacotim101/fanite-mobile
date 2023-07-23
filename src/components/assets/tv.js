@@ -7,15 +7,17 @@ function Tv() {
                       <div className="form-group basic">
                         <div className="input-wrapper">
                           <label className="label" htmlFor="account2">
-                            From
+                            Select Decorder
                           </label>
                           <select
                             className="form-control custom-select"
                             id="account2"
                           >
-                            <option value={0}>Savings (*** 5019)</option>
-                            <option value={1}>Investment (*** 6212)</option>
-                            <option value={2}>Mortgage (*** 5021)</option>
+                          <option value={0}>Choose TV Decorder</option>
+                            <option value={1}>DSTV</option>
+                            <option value={2}>GOTV</option>
+                            <option value={3}>ZUKU</option>
+                            <option value={4}>STARTIMES</option>
                           </select>
                         </div>
                       </div>

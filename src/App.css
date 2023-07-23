@@ -1525,8 +1525,8 @@ a.badge-dark {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background: #4e1dff !important;
-  border-color: #4e1dff !important;
+  background: #FFB400 !important;
+  border-color: #FFB400 !important;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -4210,7 +4210,7 @@ textarea,
 .notification-dialog.android-style
   .notification-footer
   .notification-button:active {
-  color: #4e1dff;
+  color: #FFB400;
   background: rgba(220, 220, 233, 0.3);
 }
 .notification-dialog.ios-style {
@@ -4325,7 +4325,7 @@ textarea,
 .notification-dialog.ios-style
   .notification-footer
   .notification-button:active {
-  color: #4e1dff;
+  color: #FFB400;
   background: rgba(255, 255, 255, 0.02);
 }
 .ios-add-to-home .modal-header {
